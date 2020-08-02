@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My To Do</title>
+  </head>
+  <body>
+    <header>header</header>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <button class="btn-menu">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+        </div>
+        <div class="sidebar-content">
+          <ul class="sidebar-content-menu">
+            <li class="sidebar-content-menu-item">
+              <span class="icon-menu">
+                <i class="far fa-sun"></i>
+              </span>
+              <span class="title-menu">오늘 할 일</span>
+            </li>
+            <li class="sidebar-content-menu-item">
+              <span class="icon-menu">
+                <i class="far fa-star"></i>
+              </span>
+              <span class="title-menu">중요</span>
+              <span class="count">1</span>
+            </li>
+            <li class="sidebar-content-menu-item">
+              <span class="icon-menu">
+                <i class="far fa-calendar-alt"></i>
+              </span>
+              <span class="title-menu">계획된 일정</span>
+            </li>
+            <li class="sidebar-content-menu-item">
+              <span class="icon-menu">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="title-menu">나에게 할당됨</span>
+            </li>
+            <li class="sidebar-content-menu-item weight">
+              <span class="icon-menu">
+                <i class="fas fa-home"></i>
+              </span>
+              <span class="title-menu">할 일</span>
+              <span class="count">4</span>
+            </li>
+          </ul>
+          <div class="add-list">
+            <span class="add-list-icon"><i class="fas fa-plus"></i></span>
+            <input class="add-list-input" type="text" placeholder="새 목록" />
+          </div>
+        </div>
+        <div class="sidebar-footer">sidebar-footer</div>
+      </aside>
+      <main class="main">
+        <div class="tasks-tool-bar">
+          <div class="tasks-tool-bar-headline">
+            <span class="text">할 일</span>
+            <button class="btn-more">
+              <span class="icon"><i class="fas fa-ellipsis-h"></i></span>
+            </button>
+          </div>
+          <div class="tasks-tool-bar-right">
+            <button class="btn-sort">
+              <span class="up-down-icon">
+                <i class="fas fa-exchange-alt"></i>
+              </span>
+              정렬
+            </button>
+          </div>
+        </div>
+        <div class="tasks-container">
+          <div class="add-todo">
+            <span class="add-todo-icon"><i class="fas fa-plus"></i></span>
+            <input class="add-todo-input" type="text" placeholder="작업 추가" />
+          </div>
+          <section class="todo-list">
+            <ul class="task-list">
+              <li class="task-item">
+                <span class="task-item-icon">
+                  <i class="far fa-circle"></i>
+                  <span class="tooltip-text">완료됨으로 표시</span>
+                </span>
+                <span class="task-item-text">Docker</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+              <li class="task-item">
+                <span class="task-item-icon">
+                  <i class="far fa-circle"></i>
+                  <span class="tooltip-text">완료됨으로 표시</span>
+                </span>
+                <span class="task-item-text">AWS</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+              <li class="task-item">
+                <span class="task-item-icon">
+                  <i class="far fa-circle"></i>
+                  <span class="tooltip-text">완료됨으로 표시</span>
+                </span>
+                <span class="task-item-text">Mongoose</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+              <li class="task-item">
+                <span class="task-item-icon">
+                  <i class="far fa-circle"></i>
+                  <span class="tooltip-text">완료됨으로 표시</span>
+                </span>
+                <span class="task-item-text">MongoDB</span>
+                <span class="icon-star checked">
+                  <i class="fas fa-star"></i>
+                  <span class="tooltip-text">중요도를 제거합니다.</span>
+                </span>
+              </li>
+            </ul>
+          </section>
+          <section class="complete-list">
+            <div class="task-card">
+              <span class="task-card-icon">
+                <i class="fas fa-angle-down"></i>
+              </span>
+              <span class="task-card-text">완료됨</span>
+            </div>
+            <ul class="task-list">
+              <li class="task-item completed">
+                <span class="task-item-icon">
+                  <i class="fas fa-check-circle"></i>
+                  <span class="tooltip-text">완료되지 않음으로 표시</span>
+                </span>
+                <span class="task-item-text">Express</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+              <li class="task-item completed">
+                <span class="task-item-icon">
+                  <i class="fas fa-check-circle"></i>
+                  <span class="tooltip-text">완료되지 않음으로 표시</span>
+                </span>
+                <span class="task-item-text">Node.js</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+              <li class="task-item completed">
+                <span class="task-item-icon">
+                  <i class="fas fa-check-circle"></i>
+                  <span class="tooltip-text">완료되지 않음으로 표시</span>
+                </span>
+                <span class="task-item-text">React</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+              <li class="task-item completed">
+                <span class="task-item-icon">
+                  <i class="fas fa-check-circle"></i>
+                  <span class="tooltip-text">완료되지 않음으로 표시</span>
+                </span>
+                <span class="task-item-text">JavaScript</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+              <li class="task-item completed">
+                <span class="task-item-icon">
+                  <i class="fas fa-check-circle"></i>
+                  <span class="tooltip-text">완료되지 않음으로 표시</span>
+                </span>
+                <span class="task-item-text">HTML / CSS</span>
+                <span class="icon-star">
+                  <i class="far fa-star"></i>
+                  <span class="tooltip-text">작업을 중요로 표시합니다.</span>
+                </span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="background-lines"></div>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
