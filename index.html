@@ -11,7 +11,44 @@
     <title>My To Do</title>
   </head>
   <body>
-    <header>header</header>
+    <header class="header">
+      <div class="header-left-region">
+        <button class="btn-main-menu">
+          <i class="fab fa-windows"></i>
+        </button>
+      </div>
+      <div class="header-center-region">
+        <a class="home-link" href="/">To Do</a>
+        <form class="search-form">
+          <label class="search-icon" for="search-input">
+            <i class="fas fa-search"></i>
+          </label>
+          <input class="search-input" id="search-input" type="text" />
+          <span class="btn-delete">
+            <i class="fas fa-times"></i>
+          </span>
+        </form>
+        <ul class="menu-buttons">
+          <li class="menu-button">
+            <i class="fas fa-cog"></i>
+          </li>
+          <li class="menu-button">
+            <i class="fas fa-question"></i>
+          </li>
+          <li class="menu-button">
+            <i class="fas fa-bullhorn"></i>
+            <span class="new-count">2</span>
+          </li>
+        </ul>
+      </div>
+      <div class="header-right-region">
+        <button class="btn-user">
+          <span class="user-icon">
+            <i class="fas fa-user"></i>
+          </span>
+        </button>
+      </div>
+    </header>
     <div class="container">
       <aside class="sidebar">
         <div class="sidebar-header">
@@ -57,11 +94,64 @@
             </li>
           </ul>
           <div class="add-list">
-            <span class="add-list-icon"><i class="fas fa-plus"></i></span>
-            <input class="add-list-input" type="text" placeholder="새 목록" />
+            <label for="add-list-input">
+              <span class="add-list-icon">
+                <i class="fas fa-plus"></i>
+              </span>
+            </label>
+            <input
+              class="add-list-input"
+              id="add-list-input"
+              type="text"
+              placeholder="새 목록"
+            />
+            <button class="btn-create-group">
+              <span class="create-group-icon">
+                <i class="fas fa-book-medical"></i>
+                <span class="tooltip-text">그룹 만들기</span>
+              </span>
+            </button>
           </div>
         </div>
-        <div class="sidebar-footer">sidebar-footer</div>
+        <div class="sidebar-footer">
+          <ul class="office-apps">
+            <li class="office-app">
+              <a href="#">
+                <span class="app-icon">
+                  <i class="far fa-envelope"></i>
+                </span>
+              </a>
+            </li>
+            <li class="office-app">
+              <a href="#">
+                <span class="app-icon">
+                  <i class="far fa-calendar-alt"></i>
+                </span>
+              </a>
+            </li>
+            <li class="office-app">
+              <a href="#">
+                <span class="app-icon">
+                  <i class="fas fa-user-friends"></i>
+                </span>
+              </a>
+            </li>
+            <li class="office-app">
+              <a href="#">
+                <span class="app-icon">
+                  <i class="fas fa-paperclip"></i>
+                </span>
+              </a>
+            </li>
+            <li class="office-app">
+              <a href="#">
+                <span class="app-icon">
+                  <i class="fas fa-check"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </aside>
       <main class="main">
         <div class="tasks-tool-bar">
@@ -82,8 +172,17 @@
         </div>
         <div class="tasks-container">
           <div class="add-todo">
-            <span class="add-todo-icon"><i class="fas fa-plus"></i></span>
-            <input class="add-todo-input" type="text" placeholder="작업 추가" />
+            <label for="add-todo-input">
+              <span class="add-todo-icon">
+                <i class="fas fa-plus"></i>
+              </span>
+            </label>
+            <input
+              class="add-todo-input"
+              id="add-todo-input"
+              type="text"
+              placeholder="작업 추가"
+            />
           </div>
           <section class="todo-list">
             <ul class="task-list">
@@ -202,6 +301,5 @@
         <div class="background-lines"></div>
       </main>
     </div>
-    <script src="./app.js"></script>
   </body>
 </html>
