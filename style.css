@@ -49,7 +49,6 @@ a {
 }
 
 .header-center-region {
-  /* width: calc(100vw - 96px); */
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -159,7 +158,6 @@ a {
 
 .container {
   display: flex;
-  height: calc(100vh - 48px);
 }
 
 /* sidebar */
@@ -167,6 +165,7 @@ a {
   width: 290px;
   background: #f4f4f4;
   border-right: 1px solid #eaeaea;
+  height: calc(100vh - 48px);
 }
 
 .sidebar-header {
@@ -292,7 +291,7 @@ a {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  right: -35px;
+  right: 0;
   top: -30px;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -315,7 +314,6 @@ a {
 
 .sidebar-footer .office-app {
   flex: 1;
-  /* cursor: pointer; */
 }
 
 .sidebar-footer .office-app a {
@@ -373,9 +371,6 @@ a {
   color: #888;
 }
 
-.tasks-tool-bar-right {
-}
-
 .tasks-tool-bar-right .btn-sort {
   height: 32px;
   background: transparent;
@@ -425,6 +420,19 @@ a {
   color: var(--icon-color);
 }
 
+/* section-task-list */
+.section-task-list {
+  overflow: auto;
+  height: 520px;
+}
+
+@media screen and (max-height: 679px) {
+  .section-task-list {
+    overflow: auto;
+    height: calc(100vh - 159px);
+  }
+}
+
 .task-card {
   height: 52px;
   display: flex;
@@ -440,9 +448,6 @@ a {
   margin-left: 16px;
   font-size: 16px;
   font-weight: bold;
-}
-
-.task-list {
 }
 
 /* task */
@@ -486,16 +491,16 @@ a {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  right: 0;
-  top: -30px;
+  right: 18px;
+  top: -10px;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
 
 .task-item-icon .tooltip-text {
   width: 140px;
-  left: -50px;
-  top: -18px;
+  left: 20px;
+  top: 0;
 }
 
 .task-item .icon-star:hover .tooltip-text,
@@ -514,7 +519,7 @@ a {
 
 /* background-lines */
 .background-lines {
-  height: calc(100% - 631px);
+  height: calc(100vh - 679px);
   margin: 0 24px;
   background: linear-gradient(
     180deg,
